@@ -9,6 +9,12 @@ typedef struct Bank {
     struct Bank* next;
 } Bank;
 
+void stuck(){
+	puts("Loading...");
+	sleep(2);
+	system("cls");	
+}
+
 Bank* head = NULL;
 
 // Fungsi untuk menambah data
