@@ -11,6 +11,12 @@ typedef struct Bank {
 
 Bank* head = NULL;
 
+void stuck(){
+	puts("Loading...");
+	sleep(2);
+	system("cls");	
+}
+
 // Fungsi untuk menambah data
 void create() {
     Bank* baru = (Bank*) malloc(sizeof(Bank));
